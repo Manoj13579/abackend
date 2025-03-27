@@ -1,5 +1,5 @@
 import express from 'express';
-import { stripeWebhooks } from '../controllers/webhooks.ts';
+import { stripeWebhooks } from '../controllers/webhooks';
 
 
 

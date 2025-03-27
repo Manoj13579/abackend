@@ -1,5 +1,5 @@
-import { authenticateToken } from './authMiddleware.ts';
-import '.././controllers/googleAuthController.ts';
+import { authenticateToken } from './authMiddleware';
+import '.././controllers/googleAuthController';
 import { Request, Response, NextFunction } from 'express';
 
 

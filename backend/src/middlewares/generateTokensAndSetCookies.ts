@@ -1,10 +1,10 @@
 import {
     accessTokenExpiryDate,
     refreshTokenExpiryDate,
-  } from "../config/tokenExpiry.ts";
+  } from "../config/tokenExpiry";
   import jwt from "jsonwebtoken";
   import { Response } from "express";
-  import { UsersDocument } from "../models/users.ts";
+  import { UsersDocument } from "../models/users";
 
 
 

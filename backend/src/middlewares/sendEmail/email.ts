@@ -1,5 +1,5 @@
-import { transporter } from "./emailConfig.ts";
-import { Verification_Email_Template, Welcome_Email_Template } from "./emailTemplate.ts";
+import { transporter } from "./emailConfig";
+import { Verification_Email_Template, Welcome_Email_Template } from "./emailTemplate";
 
 /* this approach for 2-step authentication in used gmail account without it approach should be modified. this approach more secure */
 export const sendVerificationEmail=async(email:string, verificationCode:string)=>{

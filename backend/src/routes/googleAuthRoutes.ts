@@ -1,5 +1,5 @@
 import express from 'express';
-import { googleAuth, googleAuthCallback, googleLogout, userInfo } from '../controllers/googleAuthController.ts';
+import { googleAuth, googleAuthCallback, googleLogout, userInfo } from '../controllers/googleAuthController';
 
 
 

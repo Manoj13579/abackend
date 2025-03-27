@@ -1,6 +1,6 @@
 import express from 'express';
-import { addCourse, getEducatorCourses, getEducatorDashboardData, getEnrolledStudents, updateRoleToEducator } from '../controllers/educatorController.ts';
-import { authenticateToken, authorizeAdmin } from '../middlewares/authMiddleware.ts';
+import { addCourse, getEducatorCourses, getEducatorDashboardData, getEnrolledStudents, updateRoleToEducator } from '../controllers/educatorController';
+import { authenticateToken, authorizeAdmin } from '../middlewares/authMiddleware';
 
 
 const educatorRoutes = express.Router();

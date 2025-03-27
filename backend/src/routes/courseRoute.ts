@@ -1,5 +1,5 @@
 import express from 'express';
-import { getAllCourses, getCourseById } from '../controllers/courseController.ts';
+import { getAllCourses, getCourseById } from '../controllers/courseController';
 
 
 

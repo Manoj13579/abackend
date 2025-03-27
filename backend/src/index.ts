@@ -3,7 +3,7 @@ import 'dotenv/config';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import connectDb from './config/db';
-import indexRouter from './routes/indexRouter.ts';
+import indexRouter from './routes/indexRouter';
 import session from 'express-session';
 import passport from 'passport';
 import MongoStore from "connect-mongo";

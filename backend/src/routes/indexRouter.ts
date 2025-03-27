@@ -1,11 +1,11 @@
 import express from 'express';
-import authRoutes from './authRoutes.ts';
-import uploadRoutes from './uploadRoutes.ts';
-import googleAuthRoutes from './googleAuthRoutes.ts';
-import educatorRoutes from './educatorRoutes.ts';
-import courseRoutes from './courseRoute.ts';
-import userRoutes from './userRoutes.ts';
-import stripeRoutes from './stripeRoutes.ts';
+import authRoutes from './authRoutes';
+import uploadRoutes from './uploadRoutes';
+import googleAuthRoutes from './googleAuthRoutes';
+import educatorRoutes from './educatorRoutes';
+import courseRoutes from './courseRoute';
+import userRoutes from './userRoutes';
+import stripeRoutes from './stripeRoutes';
 
 
 const indexRouter = express.Router();

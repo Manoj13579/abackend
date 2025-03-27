@@ -1,8 +1,8 @@
-import Users from "../models/users.ts";
+import Users from "../models/users";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import generateTokensAndSetCookies from "../middlewares/generateTokensAndSetCookies.ts";
-import { sendVerificationEmail, sendWelcomeEmail } from "../middlewares/sendEmail/email.ts";
+import generateTokensAndSetCookies from "../middlewares/generateTokensAndSetCookies";
+import { sendVerificationEmail, sendWelcomeEmail } from "../middlewares/sendEmail/email";
 import { Request, Response } from "express";
 
 

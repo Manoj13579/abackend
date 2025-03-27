@@ -1,6 +1,6 @@
 import express from 'express';
-import { upload, uploadImage } from '../middlewares/multerCloudinary.ts';
-import { authenticateToken, authorizeAdmin } from '../middlewares/authMiddleware.ts';
+import { upload, uploadImage } from '../middlewares/multerCloudinary';
+import { authenticateToken, authorizeAdmin } from '../middlewares/authMiddleware';
 
 
 

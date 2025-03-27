@@ -1,6 +1,6 @@
 import passport from 'passport';
 import { Strategy as OAuth2Strategy } from 'passport-google-oauth2';
-import Users from '../models/users.ts';
+import Users from '../models/users';
 import { Request, Response } from 'express';
 
 

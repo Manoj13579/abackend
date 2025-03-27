@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import Users from "../models/users.ts";
-import Course from "../models/Course.ts";
-import Purchase from "../models/Purchase.ts";
+import Users from "../models/users";
+import Course from "../models/Course";
+import Purchase from "../models/Purchase";
 import Stripe from "stripe";
 
 

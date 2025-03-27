@@ -1,7 +1,7 @@
 import multer from 'multer';
 import { CloudinaryStorage } from 'multer-storage-cloudinary';
 import path from 'path';
-import cloudinary from '../config/cloudinary.ts';
+import cloudinary from '../config/cloudinary';
 import { Request, Response } from 'express';
 
 

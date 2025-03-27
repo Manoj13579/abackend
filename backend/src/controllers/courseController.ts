@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import Course from "../models/Course.ts";
-import { IChapter, ILecture } from "../models/Course.ts";
+import Course from "../models/Course";
+import { IChapter, ILecture } from "../models/Course";
 
 
 // get all courses. will return all published courses with  educator details populated.

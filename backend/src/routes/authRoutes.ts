@@ -3,9 +3,9 @@ import { adminProfileEdit, deleteUser, forgotPassword,
     getAllUsers, login, logout, refreshRequest,
     register, resendVerificationCode, resetPassword, 
     userProfileEdit,
-    verificationCode, } from '../controllers/authController.ts';
-import { authenticateToken, authorizeAdmin } from '../middlewares/authMiddleware.ts';
-import eitherAuthMiddleware from '../middlewares/eitherAuthMiddleware.ts';
+    verificationCode, } from '../controllers/authController';
+import { authenticateToken, authorizeAdmin } from '../middlewares/authMiddleware';
+import eitherAuthMiddleware from '../middlewares/eitherAuthMiddleware';
 
 const authRoutes = express.Router();
 

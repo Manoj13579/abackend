@@ -1,6 +1,6 @@
 import express from 'express';
-import { getUserData, purchaseCourse, userEnrolledCourses } from '../controllers/userController.ts';
-import { authenticateToken } from '../middlewares/authMiddleware.ts';
+import { getUserData, purchaseCourse, userEnrolledCourses } from '../controllers/userController';
+import { authenticateToken } from '../middlewares/authMiddleware';
 
 
 
