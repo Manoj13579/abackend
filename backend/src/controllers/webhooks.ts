@@ -43,7 +43,9 @@ If the payment succeeds, Stripe sends an event with type payment_intent.succeede
                 payment_intent: paymentIntentId,
             })
 
-           const  purchaseId  = session.data[0].metadata?.purchaseId;
+           const  { purchaseId }  = session.data[0].metadata;
+           console.log("purchaseId", purchaseId);
+           
           
            const purchaseData = await Purchase.findById(purchaseId);
            const userData = await Users.findById(purchaseData?.userId);
@@ -70,7 +72,7 @@ If the payment succeeds, Stripe sends an event with type payment_intent.succeede
             payment_intent: paymentIntentId,
         })
 
-       const purchaseId  = session.data[0].metadata?.purchaseId;
+       const { purchaseId } = session.data[0].metadata;
        const purchaseData = await Purchase.findById(purchaseId);
        // if used for ts
        if(purchaseData) {
