@@ -92,7 +92,7 @@ export const purchaseCourse = async (req:Request, res:Response) => {
             line_items:lineItems,
             mode:"payment",
             metadata: {
-                purchaseId: (newPurchase._id as any).toString(),
+                purchaseId: newPurchase._id as any,
             },
         });
     
