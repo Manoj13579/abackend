@@ -17,7 +17,10 @@ const stripeInstance = new Stripe(process.env.STRIPE_SECRET_KEY!);
 /* main reason of this controller is to set purchase data with status. we use event returned from stripe for this which makes process more accurate */
 export const stripeWebhooks = async (request: Request, response: Response) => {
     const sig = request.headers['stripe-signature'];
-
+if (!sig) {
+    response.status(400).send('Missing Stripe signature');
+    return;
+  };
   let event;
   
   
