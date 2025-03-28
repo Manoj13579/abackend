@@ -43,7 +43,9 @@ If the payment succeeds, Stripe sends an event with type payment_intent.succeede
                 payment_intent: paymentIntentId,
             })
 
-           const  { purchaseId }  = session.data[0].metadata;
+            const metadata = session.data[0]?.metadata as Record<string, string> | null;
+            const purchaseId = metadata?.purchaseId;
+            
            console.log("purchaseId", purchaseId);
            
           
@@ -72,7 +74,9 @@ If the payment succeeds, Stripe sends an event with type payment_intent.succeede
             payment_intent: paymentIntentId,
         })
 
-       const { purchaseId } = session.data[0].metadata;
+        const metadata = session.data[0]?.metadata as Record<string, string> | null;
+        const purchaseId = metadata?.purchaseId;
+        
        const purchaseData = await Purchase.findById(purchaseId);
        // if used for ts
        if(purchaseData) {
