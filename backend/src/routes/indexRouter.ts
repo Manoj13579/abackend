@@ -5,7 +5,7 @@ import googleAuthRoutes from './googleAuthRoutes';
 import educatorRoutes from './educatorRoutes';
 import courseRoutes from './courseRoute';
 import userRoutes from './userRoutes';
-import stripeRoutes from './stripeRoutes';
+
 
 
 const indexRouter = express.Router();
@@ -16,7 +16,6 @@ indexRouter.use('/api/upload', uploadRoutes);
 indexRouter.use('/api/educator', educatorRoutes);
 indexRouter.use('/api/course', courseRoutes);
 indexRouter.use('/api/user', userRoutes);
-indexRouter.use('/api', stripeRoutes);
 indexRouter.get('/test', ((req: Request, res: Response) => {
     res.status(200).json({ success: true, message: "test success"});
 }));

@@ -7,6 +7,7 @@ import indexRouter from './routes/indexRouter';
 import session from 'express-session';
 import passport from 'passport';
 import MongoStore from "connect-mongo";
+import stripeRoutes from './routes/stripeRoutes';
 
 
 
@@ -58,6 +59,7 @@ const corsOptions = {
 
 
 app.use('/', indexRouter);
+app.use('/api', stripeRoutes);
 
 
 // in ts PORT should be different here 4000 n env 5000
