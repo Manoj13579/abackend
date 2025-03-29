@@ -47,7 +47,6 @@ app.use(session({
 
 
 app.use(cookieParser());
-app.use(express.json());
 
 
 const corsOptions = {
@@ -58,7 +57,7 @@ const corsOptions = {
   app.use(cors(corsOptions));
 
 
-app.use('/', indexRouter);
+app.use('/', express.json(), indexRouter);
 app.post('/api/stripe',  express.raw({ type: 'application/json' }), stripeWebhooks);
 
 
