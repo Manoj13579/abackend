@@ -56,9 +56,10 @@ const corsOptions = {
 };
   app.use(cors(corsOptions));
 
+  app.post('/api/stripe',  express.raw({ type: 'application/json' }), stripeWebhooks);
 
-app.use('/', express.json(), indexRouter);
-app.post('/api/stripe',  express.raw({ type: 'application/json' }), stripeWebhooks);
+app.use(express.json());
+app.use('/', indexRouter);
 
 
 // in ts PORT should be different here 4000 n env 5000
