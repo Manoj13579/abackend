@@ -7,7 +7,7 @@ import indexRouter from './routes/indexRouter';
 import session from 'express-session';
 import passport from 'passport';
 import MongoStore from "connect-mongo";
-import stripeRoutes from './routes/stripeRoutes';
+import { stripeWebhooks } from './controllers/webhooks';
 
 
 
@@ -59,7 +59,7 @@ const corsOptions = {
 
 
 app.use('/', indexRouter);
-app.use('/api', stripeRoutes);
+app.post('/api/stripe',  express.raw({ type: 'application/json' }), stripeWebhooks);
 
 
 // in ts PORT should be different here 4000 n env 5000
